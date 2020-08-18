@@ -15,8 +15,16 @@ export default class Navbar extends React.Component {
       this.setState({background : "navbar navbar-expand-md navbar-dark fixed-top"});
     }
     else{
-      this.setState({background : "navbar navbar-expand-md navbar-dark fixed-top bg-dark"});
+      this.setState({background : "navbar navbar-expand-md navbar-dark fixed-top bg-dark "});
     }
+  }
+
+  componentDidMount() {
+    document.addEventListener("scroll", () => {
+      const backgroundcolor = window.scrollY < 5 ? "navbar navbar-expand-md navbar-dark fixed-top" : "navbar navbar-expand-md navbar-dark fixed-top bg-dark";
+
+      this.setState({ background: backgroundcolor });
+    });
   }
 
   render() {

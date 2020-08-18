@@ -1,5 +1,5 @@
-.bg{
-  background-color: red;
+.fixed-top.scrolled {
+  background-color: black;
 }
 
 .welcome{
@@ -34,6 +34,8 @@
   height: 57.735px;
   background: rgb(0, 243, 243);
   position: relative;
+  display: inline-block;
+  margin: 30px 10px;
 }
 #hexagon::before {
   content: "";
