@@ -1,0 +1,15 @@
+import React from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
+
+export default function Main({ id }) {
+  return (
+    <div id={id} className="welcome">
+      <div className="text-center welcome-content">
+        <h1 className="welcomeText">Welcome to My Portfolio</h1>
+        <h1 className="welcomeText">I'm Gokul J</h1>
+        <p className="desc">MERN Stack Web Developer | Java Developer</p>
+        <button className="btn btn-primary">View My Works</button>
+      </div>
+    </div>
+  )
+}

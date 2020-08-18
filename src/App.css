@@ -1,0 +1,67 @@
+.bg{
+  background-color: red;
+}
+
+.welcome{
+  background-image: url("./assets/clay-banks-u27Rrbs9Dwc-unsplash.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background: cover;
+  height: 100vh;
+}
+
+.welcome-content{
+  color: white;
+  padding-top: 18%;
+}
+
+.desc{
+  font-size: 1.25em;
+}
+.nav-item{
+  color: rgba(255,255,255,.5);
+  /* font-size: 1em; */
+}
+
+#about{
+  height: 100vh;
+}
+
+#hexagon {
+  width: 100px;
+  height: 57.735px;
+  background: rgb(0, 243, 243);
+  position: relative;
+}
+#hexagon::before {
+  content: "";
+  position: absolute;
+  top: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 28.8675px solid rgb(0, 243, 243);
+}
+#hexagon::after {
+  content: "";
+  position: absolute;
+  bottom: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 28.8675px solid rgb(0, 243, 243);
+}
+
+#projects{
+  height: 100vh;
+}
+
+#contact{
+  height: 100vh;
+}
