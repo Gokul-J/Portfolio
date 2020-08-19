@@ -44,7 +44,7 @@ export default class Navbar extends React.Component {
             </li>
             <li class="nav-item m-2">
               {/* <a class="nav-link" href="#">ABOUT <span class="sr-only">(current)</span></a> */}
-              <Link activeClass="active" to="about" smooth={true} duration={500} onClick={this.toggleNav.bind(this,"false")}>ABOUT</Link>
+              <Link activeClass="active" to="skills" smooth={true} duration={500} onClick={this.toggleNav.bind(this,"false")}>SKILLS</Link>
             </li>
             <li class="nav-item m-2">
               {/* <a class="nav-link" href="#">PROJECTS </a> */}

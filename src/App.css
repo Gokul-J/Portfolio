@@ -2,6 +2,18 @@
   background-color: black;
 }
 
+/* body{ */
+  /* background-image: url("./assets/clay-banks-u27Rrbs9Dwc-unsplash.jpg"); */
+  /* filter: blur(2px); */
+/* } */
+
+.sector{
+  /* background-color: white;
+  height: 100%; */
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
 .welcome{
   background-image: url("./assets/clay-banks-u27Rrbs9Dwc-unsplash.jpg");
   background-size: cover;
@@ -25,17 +37,24 @@
   /* font-size: 1em; */
 }
 
-#about{
+#skills{
   height: 100vh;
 }
 
+.title{
+  margin-bottom: 30%;
+  font-size: 20px;
+}
+
 #hexagon {
-  width: 100px;
-  height: 57.735px;
+  width: 120px;
+  height: 80px;
   background: rgb(0, 243, 243);
   position: relative;
   display: inline-block;
-  margin: 30px 10px;
+  /* margin: 30px 10px; */
+  margin-bottom: 20%;
+
 }
 #hexagon::before {
   content: "";
@@ -44,8 +63,8 @@
   left: 0;
   width: 0;
   height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
   border-bottom: 28.8675px solid rgb(0, 243, 243);
 }
 #hexagon::after {
@@ -55,9 +74,57 @@
   left: 0;
   width: 0;
   height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
   border-top: 28.8675px solid rgb(0, 243, 243);
+}
+
+.hexagon {
+  background-color: #04c2c9;
+  display: inline-block;
+  height: 100%;
+  width: calc(100% * 0.57735);
+}
+.hexagon:before {
+  background-color: inherit;
+  content: "";
+  height: inherit;
+  position: absolute;
+  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  top: 0;
+  transform: rotateZ(60deg);
+  width: inherit;
+}
+.hexagon:after {
+  background-color: inherit;
+  content: "";
+  height: inherit;
+  position: absolute;
+  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  top: 0;
+  transform: rotateZ(-60deg);
+  width: inherit;
+}
+
+.redux{
+  height: 80px;
+  width: 80px;
+}
+
+.mongodb{
+  height: 50px;
+  width: 50px;
+}
+
+.restapi{
+  height: 80px;
+  width: 80px;
+}
+
+.fab{
+  margin: 10px 20px;
+  color: red;
+  font-size: 3em;
 }
 
 #projects{
