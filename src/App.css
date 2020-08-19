@@ -10,7 +10,7 @@
 .sector{
   /* background-color: white;
   height: 100%; */
-  margin-top: 5%;
+  padding-top: 5%;
   margin-bottom: 10%;
 }
 
@@ -48,6 +48,7 @@
 
 #skills{
   height: 100vh;
+  background-color: rgba(233, 233, 233, 0.5);
 }
 
 .title{
@@ -57,8 +58,8 @@
 
 #hexagon {
   width: 120px;
-  height: 80px;
-  background: rgb(0, 243, 243);
+  height: 70px;
+  background: #04C2C9;
   position: relative;
   display: inline-block;
   /* margin: 30px 10px; */
@@ -74,7 +75,7 @@
   height: 0;
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
-  border-bottom: 28.8675px solid rgb(0, 243, 243);
+  border-bottom: 28.8675px solid #04C2C9;
 }
 #hexagon::after {
   content: "";
@@ -85,17 +86,17 @@
   height: 0;
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
-  border-top: 28.8675px solid rgb(0, 243, 243);
+  border-top: 28.8675px solid #04C2C9;
 }
 
 .redux{
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
 }
 
 .mongodb{
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
 }
 
 .restapi{
@@ -103,10 +104,10 @@
   width: 80px;
 }
 
-.fab{
-  margin: 10px 20px;
-  color: red;
-  font-size: 3em;
+.skills-icon{
+  margin: 10px 0;
+  color: white;
+  font-size: 3.5em;
 }
 
 #projects{
@@ -125,4 +126,25 @@
 
 #contact{
   height: 100vh;
+  background-color: rgb(37, 41, 52);
+  color: white;
+}
+
+.details{
+  font-size: 20px;
+  padding: 10px 0;
+  margin-left: 33%;
+}
+
+.contact-icon{
+  font-size: 2rem;
+  padding: 10px 10px;
+  width: 50px;
+  height: 50px;
+  color: white;
+  background-color: #1a2025;
+}
+
+.contact-icon:hover{
+  background-color: #04C2C9;
 }

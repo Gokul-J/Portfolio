@@ -11,25 +11,25 @@ export default function Skills({ id }) {
         {/* <p>Iam a MERN Stack Web </p> */}
         <div className="row text-center">
           <div className="col-3">
-            <div id="hexagon"><i class="fab fa-html5"></i></div>
+            <div id="hexagon"><i class="skills-icon fab fa-html5"></i></div>
             <p className="title text-center">HTML</p>
           </div>
           <div className="col-3">
-            <div id="hexagon"><i class="fab fa-css3-alt"></i></div>
+            <div id="hexagon"><i class="skills-icon fab fa-css3-alt"></i></div>
             <p className="title text-center">CSS</p>
           </div>
           <div className="col-3">
-            <div id="hexagon"><i class="fab fa-js-square"></i></div>
+            <div id="hexagon"><i class="skills-icon fab fa-js-square"></i></div>
             <p className="title text-center">JavaScript</p>
 
           </div>
           <div className="col-3">
-            <div id="hexagon"><i class="fab fa-bootstrap"></i></div>
+            <div id="hexagon"><i class="skills-icon fab fa-bootstrap"></i></div>
             <p className="title text-center">Bootstrap</p>
 
           </div>
           <div className="col-3">
-            <div id="hexagon"><i class="fab fa-react"></i></div>
+            <div id="hexagon"><i class="skills-icon fab fa-react"></i></div>
             <p className="title text-center">React</p>
 
           </div>
@@ -39,8 +39,8 @@ export default function Skills({ id }) {
 
           </div>
           <div className="col-3">
-            <div id="hexagon"><i class="fab fa-node"></i></div>
-            <p className="title text-center">Nodejs</p>
+            <div id="hexagon"><i class="skills-icon fab fa-node"></i></div>
+            <p className="title text-center">Nodejs<br/>Expressjs</p>
 
           </div>
           <div className="col-3">
@@ -49,23 +49,23 @@ export default function Skills({ id }) {
 
           </div>
           <div className="col-3">
-            <div id="hexagon"><i class="fab fa-github"></i></div>
+            <div id="hexagon"><i class="skills-icon fab fa-github"></i></div>
             <p className="title text-center">GIT</p>
 
           </div>
           <div className="col-3">
-            <div id="hexagon"><i class="fab fa-java"></i></div>
+            <div id="hexagon"><i class="skills-icon fab fa-java"></i></div>
             <p className="title text-center">Java</p>
 
           </div>
           <div className="col-3">
-            <div id="hexagon"><i class="fab fa-python"></i></div>
+            <div id="hexagon"><i class="skills-icon fab fa-python"></i></div>
             <p className="title text-center">Python</p>
 
           </div>
           <div className="col-3">
             <div id="hexagon"><img src={restapi} alt="" className="restapi" /></div>
-            <p className="title text-center">REST Api</p>
+            <p className="title text-center">REST API</p>
 
           </div>
         </div>

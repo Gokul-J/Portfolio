@@ -1,7 +1,7 @@
 import React from 'react';
-import todo from '../assets/projects/todo-app-1.png';
-import irctc from '../assets/projects/irctc-app-1.png';
-import patatap from '../assets/projects/patatap-clone-1.png';
+import todo from '../assets/projects/todo-app.png';
+import irctc from '../assets/projects/irctc-app.png';
+import patatap from '../assets/projects/patatap-clone.png';
 
 export default function Projects({ id }) {
   return (

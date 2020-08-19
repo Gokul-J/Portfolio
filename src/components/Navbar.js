@@ -38,10 +38,10 @@ export default class Navbar extends React.Component {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <div className="navbar-nav">
-            <button className="nav-link"><Link activeClassName="active" to="main" smooth={true} duration={500} onClick={this.toggleNav.bind(this, "true")}>MAIN</Link></button>
-            <button className="nav-link"><Link activeClassName="active" to="skills" offset={-100} smooth={true} duration={500} onClick={this.toggleNav.bind(this, "false")}>SKILLS</Link></button>
-            <button className="nav-link"><Link activeClassName="active" to="projects" offset={-50} smooth={true} duration={500} onClick={this.toggleNav.bind(this, "false")}>PROJECTS</Link></button>
-            <button className="nav-link"><Link activeClassName="active" to="contact" offset={-50} smooth={true} duration={500} onClick={this.toggleNav.bind(this, "false")}>CONTACT</Link></button>
+            <button className="p-0 nav-link"><Link className="px-2" activeClassName="active" to="main" smooth={true} duration={500} onClick={this.toggleNav.bind(this, "true")}>MAIN</Link></button>
+            <button className="p-0 nav-link"><Link className="px-2" activeClassName="active" to="skills" offset={-100} smooth={true} duration={500} onClick={this.toggleNav.bind(this, "false")}>SKILLS</Link></button>
+            <button className="p-0 nav-link"><Link className="px-2" activeClassName="active" to="projects" offset={-50} smooth={true} duration={500} onClick={this.toggleNav.bind(this, "false")}>PROJECTS</Link></button>
+            <button className="p-0 nav-link"><Link className="px-2" activeClassName="active" to="contact" offset={-50} smooth={true} duration={500} onClick={this.toggleNav.bind(this, "false")}>CONTACT</Link></button>
           </div>
         </div>
       </nav>
