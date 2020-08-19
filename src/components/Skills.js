@@ -1,12 +1,12 @@
 import React from 'react';
-import mongodb from '../assets/mongodb.png';
-import restapi from '../assets/restapi.png';
-import redux from '../assets/redux.png';
+import mongodb from '../assets/skills/mongodb.png';
+import restapi from '../assets/skills/restapi.png';
+import redux from '../assets/skills/redux.png';
 
 export default function Skills({ id }) {
   return (
     <div id={id}>
-      <div className=" container">
+      <div className="container">
         <h1 className="sector text-center">SKILLS</h1>
         {/* <p>Iam a MERN Stack Web </p> */}
         <div className="row text-center">
@@ -34,7 +34,7 @@ export default function Skills({ id }) {
 
           </div>
           <div className="col-3">
-            <div id="hexagon"><img src={redux} className="redux" /></div>
+            <div id="hexagon"><img src={redux} alt="" className="redux" /></div>
             <p className="title text-center">React-Redux</p>
 
           </div>
@@ -44,7 +44,7 @@ export default function Skills({ id }) {
 
           </div>
           <div className="col-3">
-            <div id="hexagon"><img src={mongodb} className="mongodb" /></div>
+            <div id="hexagon"><img src={mongodb} alt="" className="mongodb" /></div>
             <p className="title text-center">MongoDB</p>
 
           </div>
@@ -64,18 +64,11 @@ export default function Skills({ id }) {
 
           </div>
           <div className="col-3">
-            <div id="hexagon"><img src={restapi} className="restapi" /></div>
+            <div id="hexagon"><img src={restapi} alt="" className="restapi" /></div>
             <p className="title text-center">REST Api</p>
 
           </div>
         </div>
-        {/* <div id="hexagon"></div>
-        <div id="hexagon"></div>
-        <div id="hexagon"></div>
-        <div id="hexagon"></div>
-        <div id="hexagon"></div>
-        <div id="hexagon"></div>
-        <div id="hexagon"></div> */}
       </div>
     </div>
   );

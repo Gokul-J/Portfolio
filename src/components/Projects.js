@@ -1,33 +1,43 @@
 import React from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import todo from '../assets/projects/todo-app-1.png';
+import irctc from '../assets/projects/irctc-app-1.png';
+import patatap from '../assets/projects/patatap-clone-1.png';
 
 export default function Projects({ id }) {
   return (
     <div id={id}>
-      <h1>Projects</h1>
-      <div class="card-group">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <div className="container">
+        <h1 className="sector text-center">PROJECTS</h1>
+        <div class="card-group row">
+          <div className="col-4">
+            <div class="card">
+              <img src={todo} class="card-img-top" alt="..." />
+              <div class="text-center card-body">
+                <h5 class="card-title">Todo App</h5>
+                <p class="text-justify card-text">This is a simple TODO list making application that helps you to keep track of your pending works</p>
+                <a href="https://gokul-todo.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-success mt-4">Visit Site</a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="..." class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <div className="col-4">
+            <div class="card">
+              <img src={irctc} class="card-img-top" alt="..." />
+              <div class="text-center card-body">
+                <h5 class="card-title">IRCTC App</h5>
+                <p class="text-justify card-text">This is a demo version IRCTC Ticket Booking platform. </p>
+                <a href="https://gokul-irctc.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-success mt-5">Visit Site</a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="..." class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <div className="col-4">
+            <div class="card">
+              <img src={patatap} class="card-img-top" alt="..." />
+              <div class="text-center card-body">
+                <h5 class="card-title">Patatap Clone</h5>
+                <p class="text-justify card-text">This is a fun project to work. It is just a simple clone of official <a href="https://www.patatap.com/" target="_blank" rel="noopener noreferrer">Patatap</a> website </p>
+                <a href="https://gokul-j.github.io/Patatap-Clone/" target="_blank" rel="noopener noreferrer" class="btn btn-success mt-5">Visit Site</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

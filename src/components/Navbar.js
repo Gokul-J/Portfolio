@@ -1,21 +1,21 @@
 import React from 'react';
-import { Link, animateScroll as Scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 export default class Navbar extends React.Component {
 
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
-      background : "navbar navbar-expand-md navbar-dark fixed-top"
+      background: "navbar navbar-expand-md navbar-dark fixed-top"
     }
   }
 
-  toggleNav(event,id){
-    if(event === "true"){
-      this.setState({background : "navbar navbar-expand-md navbar-dark fixed-top"});
+  toggleNav(event, id) {
+    if (event === "true") {
+      this.setState({ background: "navbar navbar-expand-md navbar-dark fixed-top" });
     }
-    else{
-      this.setState({background : "navbar navbar-expand-md navbar-dark fixed-top bg-dark "});
+    else {
+      this.setState({ background: "navbar navbar-expand-md navbar-dark fixed-top bg-dark " });
     }
   }
 
@@ -30,31 +30,19 @@ export default class Navbar extends React.Component {
   render() {
 
     return (
-      <nav  className={this.state.background} >
-        <a class="navbar-brand" href="#">MyWork</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+      <nav className={this.state.background} >
+        <a className="navbar-brand" href="#">MyWork</a>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item m-2">
-              {/* <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a> */}
-              <Link activeClass="active" to="main" smooth={true} duration={500} onClick={this.toggleNav.bind(this,"true")}>MAIN</Link>
-            </li>
-            <li class="nav-item m-2">
-              {/* <a class="nav-link" href="#">ABOUT <span class="sr-only">(current)</span></a> */}
-              <Link activeClass="active" to="skills" smooth={true} duration={500} onClick={this.toggleNav.bind(this,"false")}>SKILLS</Link>
-            </li>
-            <li class="nav-item m-2">
-              {/* <a class="nav-link" href="#">PROJECTS </a> */}
-              <Link activeClass="active" to="projects" smooth={true} duration={500} onClick={this.toggleNav.bind(this,"false")}>PROJECTS</Link>
-            </li>
-            <li class="nav-item m-2">
-              {/* <a class="nav-link" href="#">CONTACT </a> */}
-              <Link activeClass="active" to="contact" smooth={true} duration={500} onClick={this.toggleNav.bind(this,"false")}>CONTACT</Link>
-            </li>
-          </ul>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <div className="navbar-nav">
+            <button className="nav-link"><Link activeClassName="active" to="main" smooth={true} duration={500} onClick={this.toggleNav.bind(this, "true")}>MAIN</Link></button>
+            <button className="nav-link"><Link activeClassName="active" to="skills" offset={-100} smooth={true} duration={500} onClick={this.toggleNav.bind(this, "false")}>SKILLS</Link></button>
+            <button className="nav-link"><Link activeClassName="active" to="projects" offset={-50} smooth={true} duration={500} onClick={this.toggleNav.bind(this, "false")}>PROJECTS</Link></button>
+            <button className="nav-link"><Link activeClassName="active" to="contact" offset={-50} smooth={true} duration={500} onClick={this.toggleNav.bind(this, "false")}>CONTACT</Link></button>
+          </div>
         </div>
       </nav>
     )
