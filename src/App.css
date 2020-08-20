@@ -3,6 +3,11 @@
   background-color: black;
 }
 
+.navbar {
+  padding:0;
+  min-height: 50px;
+}
+
 .nav-item{
   color: rgba(255,255,255,.5);
 }
@@ -10,10 +15,29 @@
 .nav-link{
   background: none;
   border: 0;
+  color: white;
+  height: 50px;
+}
+
+.nav-link:hover{
+  color: #e31b6d
 }
 
 .nav-link:focus{
   outline:none;
+}
+/* 
+.navbar-toggler {
+  color: white;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+} */
+
+.fa-bars{
+  font-size: 30px;
+  color: #03b0b6;
 }
 
 .sector{
@@ -22,7 +46,6 @@
   padding-bottom: 3%;
   margin-bottom: 7%;
   font-family: "Do Hyeon";
-  /* border-bottom: 5px solid black; */
 }
 
 hr.style-one {
@@ -30,7 +53,6 @@ hr.style-one {
   height: 5px;
   width: 80%;
   background: rgb(0, 0, 0);
-  /* background-image: linear-gradient(to right, #ccc, #333, #ccc); */
 }
 
 /* MAIN PAGE */
@@ -47,30 +69,58 @@ hr.style-one {
 .welcome-content{
   color: white;
   padding-top: 40vh;
+  font-family: "Noto Serif";
 }
 
 .desc{
-  font-size: 1.25em;
+  font-size: 1.2em;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-family: "Noto Serif";
+}
+
+.view{
+  padding:10px 10px;
+  border: 2px solid #576877;
+  font-size: 17px;
+  font-weight: 700;
+  background-color: rgb(0, 0, 0, 0.3);
+}
+
+.view-works{
+  background: none;
+  border: none;
+  color: white;
+}
+
+.view-works:focus{
+  outline: none;
+}
+
+.view:hover{
+  outline:none;
+  background: #03b0b6;
 }
 
 /* SKILLS PAGE */
 #skills{
-  height: 100vh;
+  min-height: 100vh;
   background-color: rgba(233, 233, 233, 0.5);
 }
 
 .title{
   margin-bottom: 30%;
-  font-size: 20px;
+  font-size: 22px;
+  font-family: "Raleway";
+  font-weight: 400;
 }
 
 #hexagon {
   width: 120px;
   height: 70px;
-  background: #04C2C9;
+  background: #03b0b6;
   position: relative;
   display: inline-block;
-  /* margin: 30px 10px; */
   margin-bottom: 20%;
 }
 
@@ -83,7 +133,7 @@ hr.style-one {
   height: 0;
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
-  border-bottom: 28.8675px solid #04C2C9;
+  border-bottom: 28.8675px solid #03b0b6;
 }
 
 #hexagon::after {
@@ -95,7 +145,7 @@ hr.style-one {
   height: 0;
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
-  border-top: 28.8675px solid #04C2C9;
+  border-top: 28.8675px solid #03b0b6;
 }
 
 .redux{
@@ -121,7 +171,7 @@ hr.style-one {
 
 /* PROJECTS PAGE */
 #projects{
-  height: 100vh;
+  min-height: 100vh;
   background-color: rgb(199, 199, 199, 0.5);
   padding-top: 2%;
 }
@@ -134,20 +184,50 @@ hr.style-one {
   box-shadow: 3px 5px 30px rgb(0, 0, 0, 0.7);
 }
 
+
 .card-body{
   height: 250px;
 }
 
+.card-title{
+  font-family: "Raleway";
+  font-weight: 700;
+}
+
+.card-text{
+  font-family: "Raleway";
+  font-size: 17px;
+  color: rgb(116, 114, 114);
+}
+
+.visit-site{
+  width: 60%;
+  height: 20%;
+  color: black;
+  padding: 5px 0;
+  font-family: "Raleway";
+  border: 3px solid #03b0b6;
+}
+
+.visit-site:hover{
+  color: white;
+  text-decoration: none;
+  background: #03b0b6;
+}
+
+.patatap{
+  text-decoration: underline;
+}
+
 /* CONTACT PAGE */
 #contact{
-  height: 60vh;
+  min-height: 55vh;
   background-color: rgb(37, 41, 52);
   color: white;
 }
 
 #contact .sector{
   margin-bottom: 0;
-  /* padding: 0; */
 }
 
 #contact hr.style-one{
@@ -161,7 +241,6 @@ hr.style-one {
 .details{
   font-size: 20px;
   padding: 10px 0;
-  /* margin-left: 33%; */
 }
 
 .top{
@@ -185,52 +264,94 @@ hr.style-one {
 }
 
 .contact-icon:hover{
-  background-color: #04C2C9;
+  background-color: #03b0b6;
 }
 
-@media only screen and (max-width: 768px) {
+.cv{
+  font-family: "Raleway";
+  font-size: 18px;
+  color: white;
+  background: #576877;
+  padding: 10px 20px;
+  border: 3px solid white;
+  margin-bottom: 20px;
+}
+
+.cv:hover{
+  color: white;
+  background-color: #03b0b6;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 769px) {
+
+  .nav-home{
+    background:#03b0b6;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+
+  .welcomeText{
+    font-size: 30px;
+  }
+  
+  .desc{
+    font-size: 1em;
+  }
+
+  .view{
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .heading{
+    font-size: 30px;
+  }
 
   #hexagon {
-    width: 70px;
-    height: 50px;
+    width: 80px;
+    height: 60px;
   }
 
   #hexagon::before {
     top: -14.8675px;
-    border-left: 35px solid transparent;
-    border-right: 35px solid transparent;
-    border-bottom: 14.8675px solid #04C2C9;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 14.8675px solid #03b0b6;
   }
 
   #hexagon::after {
     bottom: -14.8675px;
-    border-left: 35px solid transparent;
-    border-right: 35px solid transparent;
-    border-top: 14.8675px solid #04C2C9;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 14.8675px solid #03b0b6;
   }
 
   .redux{
-    height: 50px;
-    width: 50px;
+    margin-top: 5px;
+    height: 45px;
+    width: 45px;
   }
   
   .mongodb{
-    height: 50px;
-    width: 50px;
+    margin-top: 5px;
+    height: 45px;
+    width: 45px;
   }
   
   .restapi{
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
   }
   
   .skills-icon{
-    margin: 6px 0;
-    font-size: 2.7em;
+    margin: 10px 0;
+    font-size: 2.5em;
   }
 
-  #projects{
-    height: 190vh;
+  .title{
+    font-size: 19px;
   }
 
   .card-body{
@@ -241,10 +362,62 @@ hr.style-one {
     width: 60%;
     height: 20%;
   }
+  .blockquote{
+    font-size: 14px;
+  }
 }
 
-@media only screen and (max-width: 576px) {
-  #skills{
-    height: 150vh;
+@media only screen and (max-width: 600px) {
+
+  #hexagon {
+    width: 60px;
+    height: 40px;
+  }
+
+  #hexagon::before {
+    top: -14.8675px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 14.8675px solid #03b0b6;
+  }
+
+  #hexagon::after {
+    bottom: -14.8675px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 14.8675px solid #03b0b6;
+  }
+
+  .redux{
+    height: 35px;
+    width: 35px;
+  }
+  
+  .mongodb{
+    height: 35px;
+    width: 35px;
+  }
+  
+  .restapi{
+    height: 40px;
+    width: 40px;
+  }
+  
+  .skills-icon{
+    margin: 6px 0;
+    font-size: 2em;
+  }
+
+  .title{
+    font-size: 17px;
+  }
+
+  .card-body{
+    height: 220px;
+  }
+
+  .visit-site{
+    width: 60%;
+    height: 20%;
   }
 }
