@@ -39,10 +39,10 @@ export default class Navbar extends React.Component {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <div className="navbar-nav mx-auto">
-            <Link activeClassName="active" to="skills" offset={-25} smooth={true} duration={500} onClick={this.toggleNav.bind(this, "false")}><button className="p-0 nav-link px-3 mx-auto">SKILLS</button></Link>
-            <Link activeClassName="active" to="projects" offset={-25} smooth={true} duration={500} onClick={this.toggleNav.bind(this, "false")}><button className="p-0 nav-link px-3 mx-auto">PROJECTS</button></Link>
-            <Link activeClassName="active" to="main" smooth={true} duration={500} onClick={this.toggleNav.bind(this, "true")}><button className="nav-home p-0 nav-link px-3 mx-auto">HOME</button></Link>
-            <Link activeClassName="active" to="contact" offset={-25} smooth={true} duration={500} onClick={this.toggleNav.bind(this, "false")}><button className="p-0 nav-link px-3 mx-auto">CONTACT</button></Link>
+            <Link activeclassname="active" to="skills" offset={-25} smooth={true} duration={500} onClick={this.toggleNav.bind(this, "false")}><button className="p-0 nav-link px-3 mx-auto">SKILLS</button></Link>
+            <Link activeclassname="active" to="projects" offset={-25} smooth={true} duration={500} onClick={this.toggleNav.bind(this, "false")}><button className="p-0 nav-link px-3 mx-auto">PROJECTS</button></Link>
+            <Link activeclassname="active" to="main" smooth={true} duration={500} onClick={this.toggleNav.bind(this, "true")}><button className="nav-home p-0 nav-link px-3 mx-auto">HOME</button></Link>
+            <Link activeclassname="active" to="contact" offset={-25} smooth={true} duration={500} onClick={this.toggleNav.bind(this, "false")}><button className="p-0 nav-link px-3 mx-auto">CONTACT</button></Link>
             <a href={cv} target="_blank" rel="noopener noreferrer" className="p-0 nav-link px-3 d-flex justify-content-center align-items-center">MY CV</a><br/>
           </div>
         </div>

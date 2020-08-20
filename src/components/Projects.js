@@ -11,34 +11,34 @@ export default function Projects({ id }) {
           <h1 className="heading">PROJECTS</h1>
           <hr className="style-one" />
         </div>
-        <div class="card-group row">
+        <div className="card-group row">
           <div className="col-lg-4">
-            <div class="card">
-              <img src={todo} class="card-img-top" alt="..." />
-              <div class="text-center card-body d-flex flex-column">
-                <h5 class="card-title">Todo App</h5>
-                <p class="text-justify card-text">This is a simple TODO list making application that helps you to keep track of your pending works.</p>
-                <a href="https://gokul-todo.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="visit-site m-auto mt-lg-4">VISIT SITE</a>
+            <div className="card">
+              <img src={todo} className="card-img-top" alt="..." />
+              <div className="text-center card-body d-flex flex-column">
+                <h5 className="card-title">Todo App</h5>
+                <p className="text-justify card-text">This is a simple TODO list making application that helps you to keep track of your pending works.</p>
+                <a href="https://gokul-todo.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="visit-site m-auto mt-lg-4">VISIT SITE</a>
               </div>
             </div>
           </div>
           <div className="col-lg-4">
-            <div class="card">
-              <img src={irctc} class="card-img-top" alt="..." />
-              <div class="text-center card-body d-flex flex-column">
-                <h5 class="card-title">IRCTC App</h5>
-                <p class="text-justify card-text">This is a demo version IRCTC Ticket Booking platform with minimal design and more functionalities.</p>
-                <a href="https://gokul-irctc.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="visit-site m-auto mt-lg-4">VISIT SITE</a>
+            <div className="card">
+              <img src={irctc} className="card-img-top" alt="..." />
+              <div className="text-center card-body d-flex flex-column">
+                <h5 className="card-title">IRCTC App</h5>
+                <p className="text-justify card-text">This is a demo version of IRCTC Ticket Booking platform with minimal design and more functionalities.</p>
+                <a href="https://gokul-irctc.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="visit-site m-auto mt-lg-4">VISIT SITE</a>
               </div>
             </div>
           </div>
           <div className="col-lg-4">
-            <div class="card">
-              <img src={patatap} class="card-img-top" alt="..." />
-              <div class="text-center card-body d-flex flex-column">
-                <h5 class="card-title">Patatap Clone</h5>
-                <p class="text-justify card-text">This is a fun project to work. It is just a simple clone of official <a href="https://www.patatap.com/" target="_blank" rel="noopener noreferrer" className="patatap">Patatap</a> website using Paperjs and Howlerjs. </p>
-                <a href="https://gokul-j.github.io/Patatap-Clone/" target="_blank" rel="noopener noreferrer" class="visit-site m-auto mt-lg-4">VISIT SITE</a>
+            <div className="card">
+              <img src={patatap} className="card-img-top" alt="..." />
+              <div className="text-center card-body d-flex flex-column">
+                <h5 className="card-title">Patatap Clone</h5>
+                <p className="text-justify card-text">This is a fun project to work. It is just a simple clone of official <a href="https://www.patatap.com/" target="_blank" rel="noopener noreferrer" className="patatap">Patatap</a> website using Paperjs and Howlerjs. </p>
+                <a href="https://gokul-j.github.io/Patatap-Clone/" target="_blank" rel="noopener noreferrer" className="visit-site m-auto mt-lg-4">VISIT SITE</a>
               </div>
             </div>
           </div>

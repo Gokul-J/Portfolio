@@ -14,25 +14,25 @@ export default function Skills({ id }) {
         {/* <p>Iam a MERN Stack Web </p> */}
         <div className="row">
           <div className="col-4 col-sm-4 col-md-3 mb-3 mb-md-0">
-            <div id="hexagon"><i class="skills-icon hover-effect fab fa-html5"></i></div>
+            <div id="hexagon"><i className="skills-icon hover-effect fab fa-html5"></i></div>
             <p className="title text-center">HTML</p>
           </div>
           <div className="col-4 col-sm-4 col-md-3 mb-3 mb-md-0">
-            <div id="hexagon"><i class="skills-icon hover-effect fab fa-css3-alt"></i></div>
+            <div id="hexagon"><i className="skills-icon hover-effect fab fa-css3-alt"></i></div>
             <p className="title text-center">CSS</p>
           </div>
           <div className="col-4 col-sm-4 col-md-3 mb-3 mb-md-0">
-            <div id="hexagon"><i class="skills-icon hover-effect fab fa-js-square"></i></div>
+            <div id="hexagon"><i className="skills-icon hover-effect fab fa-js-square"></i></div>
             <p className="title text-center">JavaScript</p>
 
           </div>
           <div className="col-4 col-sm-4 col-md-3 mb-3 mb-md-0">
-            <div id="hexagon"><i class="skills-icon hover-effect fab fa-bootstrap"></i></div>
+            <div id="hexagon"><i className="skills-icon hover-effect fab fa-bootstrap"></i></div>
             <p className="title text-center">Bootstrap</p>
 
           </div>
           <div className="col-4 col-sm-4 col-md-3 mb-3 mb-md-0">
-            <div id="hexagon"><i class="skills-icon hover-effect fab fa-react"></i></div>
+            <div id="hexagon"><i className="skills-icon hover-effect fab fa-react"></i></div>
             <p className="title text-center">React</p>
 
           </div>
@@ -42,7 +42,7 @@ export default function Skills({ id }) {
 
           </div>
           <div className="col-4 col-sm-4 col-md-3 mb-3 mb-md-0">
-            <div id="hexagon"><i class="skills-icon hover-effect fab fa-node"></i></div>
+            <div id="hexagon"><i className="skills-icon hover-effect fab fa-node"></i></div>
             <p className="title text-center">Nodejs<br/>Expressjs</p>
 
           </div>
@@ -52,17 +52,17 @@ export default function Skills({ id }) {
 
           </div>
           <div className="col-4 col-sm-4 col-md-3 mb-3 mb-md-0">
-            <div id="hexagon"><i class="skills-icon hover-effect fab fa-github"></i></div>
+            <div id="hexagon"><i className="skills-icon hover-effect fab fa-github"></i></div>
             <p className="title text-center">GIT</p>
 
           </div>
           <div className="col-4 col-sm-4 col-md-3 mb-3 mb-md-0">
-            <div id="hexagon"><i class="skills-icon hover-effect fab fa-java"></i></div>
+            <div id="hexagon"><i className="skills-icon hover-effect fab fa-java"></i></div>
             <p className="title text-center">Java</p>
 
           </div>
           <div className="col-4 col-sm-4 col-md-3 mb-3 mb-md-0">
-            <div id="hexagon"><i class="skills-icon hover-effect fab fa-python"></i></div>
+            <div id="hexagon"><i className="skills-icon hover-effect fab fa-python"></i></div>
             <p className="title text-center">Python</p>
 
           </div>
