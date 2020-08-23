@@ -14,7 +14,7 @@ export default function Skills({ id }) {
         </div>
         {/* <p>Iam a MERN Stack Web </p> */}
         <div className="row">
-          <Flip left>
+          <Flip left duration={2000}>
           <div className="col-4 col-sm-4 col-md-3 mb-3 mb-md-0">
             <div id="hexagon"><i className="skills-icon fab fa-html5"></i></div>
             <p className="title text-center">HTML</p>

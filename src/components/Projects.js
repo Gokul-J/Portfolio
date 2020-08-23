@@ -2,6 +2,7 @@ import React from 'react';
 import todo from '../assets/projects/todo-app.png';
 import irctc from '../assets/projects/irctc-app.png';
 import patatap from '../assets/projects/patatap-clone.png';
+import Fade from 'react-reveal/Fade';
 
 export default function Projects({ id }) {
   return (
@@ -12,6 +13,7 @@ export default function Projects({ id }) {
           <hr className="style-one" />
         </div>
         <div className="card-group row">
+        <Fade right cascade>
           <div className="col-lg-4">
             <div className="card">
               <img src={todo} className="card-img-top" alt="..." />
@@ -22,6 +24,8 @@ export default function Projects({ id }) {
               </div>
             </div>
           </div>
+          </Fade>
+          <Fade right cascade delay={500}>
           <div className="col-lg-4">
             <div className="card">
               <img src={irctc} className="card-img-top" alt="..." />
@@ -32,6 +36,8 @@ export default function Projects({ id }) {
               </div>
             </div>
           </div>
+          </Fade>
+          <Fade right cascade delay={1000}>
           <div className="col-lg-4">
             <div className="card">
               <img src={patatap} className="card-img-top" alt="..." />
@@ -42,6 +48,7 @@ export default function Projects({ id }) {
               </div>
             </div>
           </div>
+          </Fade>
         </div>
       </div>
     </div>
