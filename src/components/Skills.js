@@ -2,6 +2,7 @@ import React from 'react';
 import mongodb from '../assets/skills/mongodb.png';
 import restapi from '../assets/skills/restapi.png';
 import redux from '../assets/skills/redux.png';
+import Flip from 'react-reveal/Flip';
 
 export default function Skills({ id }) {
   return (
@@ -13,6 +14,7 @@ export default function Skills({ id }) {
         </div>
         {/* <p>Iam a MERN Stack Web </p> */}
         <div className="row">
+          <Flip left>
           <div className="col-4 col-sm-4 col-md-3 mb-3 mb-md-0">
             <div id="hexagon"><i className="skills-icon fab fa-html5"></i></div>
             <p className="title text-center">HTML</p>
@@ -70,6 +72,7 @@ export default function Skills({ id }) {
             <div id="hexagon"><img src={restapi} alt="" className="restapi" /></div>
             <p className="title text-center">REST API</p>
           </div>
+          </Flip>
         </div>
       </div>
     </div>
