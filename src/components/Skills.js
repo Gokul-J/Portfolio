@@ -45,7 +45,7 @@ export default function Skills({ id }) {
           </div>
           <div className="col-4 col-sm-4 col-md-3 mb-3 mb-md-0">
             <div id="hexagon"><i className="skills-icon fab fa-node"></i></div>
-            <p className="title text-center">Nodejs<br/>Expressjs</p>
+            <p className="title text-center">Node js<br/>Express js</p>
 
           </div>
           <div className="col-4 col-sm-4 col-md-3 mb-3 mb-md-0">

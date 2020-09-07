@@ -23,14 +23,14 @@ export default function Contact({ id }) {
             <a href="https://github.com/Gokul-J" target="_blank" rel="noopener noreferrer"><i className="contact-icon fab fa-github"></i></a>
             {/* <span className="ml-3">https://github.com/Gokul-J</span> */}
           </span>
-          <span className="details">
+          {/* <span className="details">
             <a href="https://stackoverflow.com/users/13096352/gokul-j" target="_blank" rel="noopener noreferrer"><i className="contact-icon fab fa-stack-overflow"></i></a>
-            {/* <span className="ml-3">https://stackoverflow.com/users/13096352/gokul-j</span> */}
+            {/* <span className="ml-3">https://stackoverflow.com/users/13096352/gokul-j</span> *
           </span>
           <span className="details">
             <a href="https://www.linkedin.com/in/gokul-j-42ba871b3/" target="_blank" rel="noopener noreferrer"><i className="contact-icon fab fa-linkedin-in"></i></a>
-            {/* <span className="ml-3">https://www.linkedin.com/in/gokul-j-42ba871b3/</span> */}
-          </span>
+            {/* <span className="ml-3">https://www.linkedin.com/in/gokul-j-42ba871b3/</span> *
+          </span> */}
         </div>
         <blockquote className="blockquote text-center">
           <p className="mb-0">When something is important enough, you do it even if the odds are not in your favour.</p>
